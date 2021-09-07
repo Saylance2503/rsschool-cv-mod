@@ -50,7 +50,7 @@ function sumTriangularNumbers(n) {
 
 - Saratov State Technical University Yu.A. Gagarina, Saratov
 - JavaScript Manual on [learnjavascript.ru](https://learn.javascript.ru/) (in progress)
-- RS Schools Course on [https://rs.school/js/](https://app.rs.school/certificate/b8x2ccws) (completed)
+- RS Schools Course on [RS Schools](https://app.rs.school/certificate/b8x2ccws) (completed)
 
 ---
 
