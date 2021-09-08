@@ -47,7 +47,7 @@ body {
 }
 .container {
   margin: 20px auto;
-  width: 1024px;
+  max-width: 1024px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -72,6 +72,8 @@ header {
   background-color: #292929;
 }
 header img {
+  max-width: 220px;
+  max-height: 220px;
   margin-bottom: 10px;
   border: 3px solid #fff;
   border-radius: 50%;
@@ -83,7 +85,7 @@ header h1 {
   line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: 7px;
-  color: #f10;
+  color: rgba(255, 17, 0, 0.767);
 }
 header h2 {
   margin-bottom: 20px;
@@ -103,7 +105,7 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #f10;
+  color: rgba(255, 17, 0, 0.767);
 }
 main .contacts h3 {
   margin-top: 0;
@@ -170,15 +172,29 @@ main :not(.contacts) ul {
   display: block;
   margin: 0 auto;
 }
+figure a {
+  text-decoration: none;
+  color: #777;
+}
+figure a:visited {
+  text-decoration: none;
+  color: #777;
+}
+figure img {
+  max-width: 300px;
+}
+.image {
+  margin-top: 20px;
+  width: 300px;
+}
 .code-example p {
   margin-left: 45px;
 }
 pre {
   margin-top: 20px;
-  padding-left: 30px;
   font-family: monospace;
   font-size: 0.9rem;
-  background-color: #505050;
+  background-color: #333333;
 }
 footer {
   display: flex;
@@ -199,4 +215,41 @@ footer .github-icon {
 .github {
   display: flex;
   align-items: center;
+}
+@media (max-width: 890px) {
+  figure img {
+    width: 300px;
+  }
+}
+@media (max-width: 780px) {
+  header,
+  main,
+  aside,
+  footer {
+    padding: 10px 30px;
+  }
+  pre {
+    width: 100%;
+  }
+  pre code {
+    font-size: 10px;
+  }
+}
+@media (max-width: 660px) {
+  figure img {
+    width: 200px;
+  }
+  header img {
+    width: 110px;
+    height: 110px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }
