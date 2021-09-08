@@ -172,7 +172,8 @@ main :not(.contacts) ul {
   display: block;
   margin: 0 auto;
 }
-figure a {
+figure a,
+figcaption {
   text-decoration: none;
   color: #777;
 }
